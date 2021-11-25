@@ -1,0 +1,439 @@
+@charset "UTF-8";
+/* ================================
+intro
+================================= */
+.intro .intro-titulo {
+    color: #fff;
+    font-weight: 600;
+    font-size: 3rem;
+}
+  
+.intro .intro-subtitulo {
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+  
+span.texto-slider-items {
+    display: none;
+}
+
+/* ================================
+config Section Portifolio
+================================= */
+
+html{
+    -webkit-tap-highlight-color: transparent;
+}
+
+div{
+    display: block;
+}
+
+.portifolio-item{
+    margin-bottom: 30px;
+}
+
+.text-center{
+    text-align: center!important;
+}
+
+@media(min-width:768px){
+    .col-md-6{
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+}
+
+.col-lg-4,.col-md-6{
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.card-footer a{
+    color: black;
+}
+
+.card-footer a:hover{
+    color: #f82249;
+}
+
+.card{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    border: 1px solid #ededed;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .1);
+    background: #f5f5f5;
+    border-radius: .25rem;
+}
+
+.h-100{
+    height: 100%!important;
+}
+
+.link-img {
+    transition: all .2s ease-in-out;
+}
+
+div a#imagem:hover{
+    box-shadow: rgba(0, 0, 0, .7);
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+.card-img-top{
+    width: 100%;
+    border-top-left-radius: calc(.25rem - 1px);
+    border-top-right-radius: calc(.25rem - 1px);
+}
+
+img{
+    vertical-align: middle;
+    border-style: none;
+}
+
+
+.img-fluid{
+    max-width: 100%;
+    height: auto;
+}
+
+.card-body{
+    padding: 1.5rem 1.5rem 0;
+    flex: 1 1 auto;
+}
+
+.card-title{
+    margin-bottom: .75rem;
+}
+
+.card-title h4{
+    font-weight: 700;
+    font-family: inherit;
+    line-height: 1.2;
+    margin-top: 0;
+    display: block;
+    margin-block-start: 1.33em;
+    margin-block-end: 1.33em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+.card-text:last-child{
+    margin-bottom: 0.
+}
+
+.card-text p {
+    margin-top: 0;
+}
+
+.card-footer{
+    padding: .75rem 1.5rem 1.5rem;
+    border:0;
+    background: 0 0;
+}
+
+.card-footer i{
+    margin-right: 3px;
+}
+
+.btn{
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    -webkit-user-select: none;
+    vertical-align: middle;
+    line-height: 1.5;
+    user-select: none;
+    padding: .375rem .75rem;
+    border-radius: .25rem;
+}
+
+btn-tertiary {
+    font-size: 11px;
+    font-weight: 700;
+    border:0;
+    box-shadow: 0 3px 3px 0 rgba(0, 0, 0, .1);
+    color: #343a40;
+    background-color: #fff;
+    transition: all .15s ease-in-out;
+}
+
+.btn:not(:disabled):not(.disabled){
+    cursor: pointer;
+}
+
+.card-footer:last-child{
+    border-radius: 0 0 calc(.25rem - 1px) calc(.25rem - 1px);
+}
+
+.card-link+.card-link{
+    margin-left: 1.25rem;
+}
+
+
+
+/* ================================
+album certificados em courses
+================================= */
+
+ul#certificates{
+    width: 900px;
+    margin: 0 auto;
+    padding: 82px;
+    overflow: hidden;
+    list-style: none;
+}
+
+ul#certificates li span{
+    opacity: 0;
+    color: #ffffff;
+    text-shadow: 1px 1px 1px #000000;
+    background-color: rgba(0, 0, 0, .3);
+    font-size: 9pt;
+    line-height: 370px;
+    padding: 5px;
+}
+
+ul#certificates li:hover{
+    -webkit-transform: scale(2.0);
+}
+
+ul#certificates li:hover span{
+    opacity: 1;
+}
+
+ul#certificates li{
+    float: left;
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    border: 5px solid #fff;
+    background-color: #fff;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, .4);
+    -webkit-transition: all .5s ease-in;
+}
+
+ul#certificates li#cer1{
+    background-image: url(../img/certificates/1.jpeg);
+    background-position: 50% 50%;
+    background-size: 970px 885px;
+    background-color: #ffffff;
+    
+}
+
+ul#certificates li#cer1:hover{
+    background-position: 0px 0px;
+    background-size: cover;
+}
+
+ul#certificates li#cer2{
+    background-image: url(../img/certificates/2.jpeg);
+    background-position: 50% 50%;
+    background-size: 676px 476px;
+    background-color: #ffffff;
+}
+
+ul#certificates li#cer2:hover{
+    background-position: 0px 0px;
+    background-size: cover;
+
+}
+
+ul#certificates li#cer3{
+    background-image: url(../img/certificates/3.jpeg);
+    background-position: 50% 50%;
+    background-size: 970px 885px;
+    background-color: #ffffff;
+}
+
+ul#certificates li#cer3:hover{
+    background-position: 0px 0px;
+    background-size: contain;
+
+}
+
+
+ul#certificates li#cer4{
+    background: url(../img/certificates/4.jpg);
+    background-position: 50% 50%;
+    background-size: 1056px 728px;
+    background-color: #ffffff;
+}
+
+ul#certificates li#cer4:hover{
+    background-position: 0px 0px;
+    background-size: contain;
+    height: 150px;
+
+}
+
+ul#certificates li#cer4:hover span{
+    opacity: 1;
+    margin-top: 322px;
+    position: absolute;
+    left: 34px;
+    top: -195px;
+    line-height: 9px;
+}
+
+
+ul#certificates li#cer5{
+    background-image: url(../img/certificates/5.png);
+    background-position: 50% 50%;
+    background-size: 838px 594px;
+    background-color: #ffffff;
+}
+
+ul#certificates li#cer5:hover{
+    background-position: 0px 0px;
+    background-size: contain;
+    height: 140px;
+
+}
+ul#certificates li#cer5:hover span{
+    opacity: 1;
+    margin-top: 319px;
+    position: absolute;
+    left: 15px;
+    top: -200px;
+    line-height: 9px;
+}
+
+ul#certificates li#cer6{
+    background-image: url(../img/certificates/6.jpg);
+    background-position: 50% 50%;
+    background-size: 1004px 712px;
+    background-color: #ffffff;
+}
+
+ul#certificates li#cer6:hover{
+    background-position: 0px 0px;
+    background-size: contain;
+    height: 140px;
+}
+
+ul#certificates li#cer6:hover span{
+    opacity: 1;
+    margin-top: 319px;
+    position: absolute;
+    left: 30px;
+    top: -200px;
+    line-height: 9px;
+}
+
+ul#certificates li#cer7{
+    background-image: url(../img/certificates/7.jpg);
+    background-position: 50% 50%;
+    background-size: 1004px 712px;
+    background-color: #ffffff;
+}
+
+ul#certificates li#cer7:hover{
+    background-position: 0px 0px;
+    background-size: contain;
+    height: 140px;
+}
+
+ul#certificates li#cer7:hover span{
+    opacity: 1;
+    margin-top: 319px;
+    position: absolute;
+    left: 30px;
+    top: -200px;
+    line-height: 9px;
+}
+
+
+ul#certificates li#cer8{
+    background-image: url(../img/certificates/8.jpg);
+    background-position: 50% 50%;
+    background-size: 970px 885px;
+    background-color: #ffffff;
+    
+}
+
+ul#certificates li#cer8:hover{
+    background-position: 0px 0px;
+    background-size: cover;
+    left: 170px;
+}
+
+ul#certificates li#cer9{
+    background-image: url(../img/certificates/9.png);
+    background-position: 50% 50%;
+    background-size: 970px 885px;
+    background-color: #ffffff;
+    
+}
+
+ul#certificates li#cer9:hover{
+    background-position: 0px 0px;
+    background-size: contain;
+    height: 110px;
+}
+
+ul#certificates li#cer9:hover span{
+    opacity: 1;
+    margin-top: 319px;
+    position: absolute;
+    left: 55px;
+    top: -230px;
+    line-height: 9px;
+}
+
+ul#certificates li#cer10{
+    background-image: url(../img/certificates/10.png);
+    background-position: 50% 50%;
+    background-size: 1004px 712px;
+    background-color: #ffffff;
+}
+
+ul#certificates li#cer10:hover{
+    background-position: 0px 0px;
+    background-size: contain;
+    height: 140px;
+}
+
+ul#certificates li#cer10:hover span{
+    opacity: 1;
+    margin-top: 319px;
+    position: absolute;
+    left: 30px;
+    top: -200px;
+    line-height: 9px;
+}
+
+ul#certificates li#cer11{
+    background-image: url(../img/certificates/11.png);
+    background-position: 50% 50%;
+    background-size: 970px 885px;
+    background-color: #ffffff;
+    
+}
+
+ul#certificates li#cer11:hover{
+    background-position: 0px 0px;
+    background-size: cover;
+}
+
+/* lista de projetos */
+ul#projetos{
+    list-style: none;
+    overflow: hidden;
+}
+
+@media (min-width: 992px){
+    .col-md-6 img {
+        width: 100%;
+    }
+}
